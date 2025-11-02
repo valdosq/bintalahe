@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Desa Bintalahe – Beranda</title>
+    <link rel="icon" href="assets/img/bonbol.png" type="image/png" />
+
+    <!-- Bootstrap (hapus jika sudah ada di proyek) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons (untuk ikon panah & menu) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg main-navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <!-- ganti ini dengan logo PNG kamu -->
+          <img src="assets/img/bonbol.png" alt="Logo" class="brand-logo" />
+          <span class="brand-text">
+            <strong>Desa Bintalahe</strong>
+            <small>Kabupaten Bone Bolango</small>
+          </span>
+        </a>
+
+        <!-- tombol toggler mobile -->
+        <button
+          class="navbar-toggler rounded-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#topnav"
+          aria-controls="topnav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="bi bi-list"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="topnav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link active-pill" href="#">Beranda</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Profil</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pemerintahan</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <!-- carousel bg -->
+      <div
+        id="heroCarousel"
+        class="carousel slide carousel-fade h-100"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <img
+              src="assets\img\hero0.jpg"
+              class="d-block w-100 h-100 object-cover"
+              alt="slide-1"
+            />
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="assets\img\hero1.webp"
+              class="d-block w-100 h-100 object-cover"
+              alt="slide-2"
+            />
+          </div>
+          <div class="carousel-item h-100">
+            <img
+              src="assets\img\hero2.jpeg"
+              class="d-block w-100 h-100 object-cover"
+              alt="slide-3"
+            />
+          </div>
+        </div>
+
+        <!-- panah -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="prev"
+          aria-label="Sebelumnya"
+        >
+          <span class="hero-ctrl"><i class="bi bi-chevron-left"></i></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#heroCarousel"
+          data-bs-slide="next"
+          aria-label="Berikutnya"
+        >
+          <span class="hero-ctrl"><i class="bi bi-chevron-right"></i></span>
+        </button>
+      </div>
+
+      <!-- COPY hero (layout 1 kolom, kiri) -->
+      <div class="hero-copy container">
+        <div class="hero-content">
+          <p class="leadup mb-2">Selamat Datang</p>
+          <h1 class="title">
+            Website Resmi Desa
+            <span class="d-block">Bintalahe</span>
+          </h1>
+          <p class="subtitle">
+            Sumber informasi terbaru tentang pemerintahan di Desa Bintalahe
+          </p>
+          <a href="#jelajah" class="btn btn-cta mt-4">Jelajahi Sekarang</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GRID MENU -->
+    <section class="feature-wrap container">
+      <div id="jelajah" class="row g-3 g-md-4">
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-1"
+              ><i class="bi bi-building"></i
+            ></span>
+            <span>
+              <span class="feature-title">Profil Desa</span>
+              <small class="feature-desc">Gambaran umum desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-2"
+              ><i class="bi bi-bar-chart"></i
+            ></span>
+            <span>
+              <span class="feature-title">Infografis</span>
+              <small class="feature-desc">Data demografis desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-3"
+              ><i class="bi bi-graph-up-arrow"></i
+            ></span>
+            <span>
+              <span class="feature-title">IDM</span>
+              <small class="feature-desc">Indeks Desa Membangun</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-4"
+              ><i class="bi bi-folder2-open"></i
+            ></span>
+            <span>
+              <span class="feature-title">PPID</span>
+              <small class="feature-desc">Informasi publik</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-1"
+              ><i class="bi bi-newspaper"></i
+            ></span>
+            <span>
+              <span class="feature-title">Berita</span>
+              <small class="feature-desc">Informasi dan kegiatan desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-2"
+              ><i class="bi bi-box-seam"></i
+            ></span>
+            <span>
+              <span class="feature-title">Bansos</span>
+              <small class="feature-desc">Informasi bantuan desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-3"
+              ><i class="bi bi-bank"></i
+            ></span>
+            <span>
+              <span class="feature-title">APB</span>
+              <small class="feature-desc">Informasi APB desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-4"
+              ><i class="bi bi-images"></i
+            ></span>
+            <span>
+              <span class="feature-title">Galeri</span>
+              <small class="feature-desc">Dokumentasi Kegiatan desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-1"
+              ><i class="bi bi-handbag"></i
+            ></span>
+            <span>
+              <span class="feature-title">UMKM</span>
+              <small class="feature-desc">Informasi produk UMKM desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-2"
+              ><i class="bi bi-pin-map"></i
+            ></span>
+            <span>
+              <span class="feature-title">Wisata</span>
+              <small class="feature-desc">Informasi wisata desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-3"
+              ><i class="bi bi-gem"></i
+            ></span>
+            <span>
+              <span class="feature-title">Potensi</span>
+              <small class="feature-desc">Informasi potensi desa</small>
+            </span>
+          </a>
+        </div>
+        <div class="col-6 col-md-3">
+          <a class="feature-card" href="#">
+            <span class="feature-icon bg-pastel-4"
+              ><i class="bi bi-flag"></i
+            ></span>
+            <span>
+              <span class="feature-title">Pengaduan</span>
+              <small class="feature-desc">Pengaduan publik</small>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seksi penjelasan -->
+    <section class="section-lite py-5">
+      <div class="container text-center">
+        <h3 class="section-title mb-3">Jelajahi Desa</h3>
+        <p class="text-muted mx-auto" style="max-width: 760px">
+          Melalui website ini Anda dapat menjelajahi segala hal yang terkait
+          dengan Desa Bintalahe.
+        </p>
+      </div>
+    </section>
+
+    <!-- SAMBUTAN -->
+    <section class="welcome py-5 py-md-6">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <!-- Foto (kiri) -->
+          <div class="col-12 col-md-5">
+            <div class="welcome-photo mx-auto">
+              <!-- ganti src dengan foto kepala desa -->
+              <img src="assets\img\kades.png" alt="Kepala Desa" />
+            </div>
+          </div>
+
+          <!-- Teks (kanan) -->
+          <div class="col-12 col-md-7">
+            <span class="badge-soft mb-2">Sambutan</span>
+            <h2 class="welcome-title mb-1">
+              Kepala Desa <span class="text-brand">Bintalahe</span>
+            </h2>
+
+            <h3 class="welcome-name mb-0">Zulkarnain Antuke, SH</h3>
+            <div class="welcome-role mb-3">PJ. Kepala Desa</div>
+
+            <p class="welcome-body mb-0">
+              Assalamu'alaikum Warahmatullahi Wabarakatuh, Salam sejahtera bagi
+              kita semua. Selamat datang di Website resmi Pemerintah Desa
+              Bintalahe. Kami berharap dengan hadirnya website ini dapat
+              menunjang keselarasan program kerja Pemerintah Desa Bintalahe
+              dengan masyarakat. Selain itu, website ini juga merupakan wujud
+              transparansi Pemerintah Desa dalam mempublikasikan dan
+              menginformasikan kegiatan pemerintahan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMOGRAFIS -->
+    <section class="civic-stats my-5 py-6 py-lg-6">
+      <div class="container">
+        <div class="text-center mb-4 mb-lg-5">
+          <h2 class="civic-title mb-2">Administrasi Penduduk</h2>
+          <p class="civic-subtitle mb-0">
+            Sistem digital yang mempermudah pengelolaan data dan informasi
+            terkait kependudukan
+          </p>
+        </div>
+
+        <div class="row g-3 g-md-4">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="stat-card">
+              <i class="bi bi-people stat-icon" aria-hidden="true"></i>
+              <div class="value">2,543</div>
+              <div class="label">Penduduk</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="stat-card">
+              <i class="bi bi-gender-male stat-icon" aria-hidden="true"></i>
+              <div class="value">1,287</div>
+              <div class="label">Laki-Laki</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="stat-card">
+              <i class="bi bi-house-door stat-icon" aria-hidden="true"></i>
+              <div class="value">682</div>
+              <div class="label">Kepala Keluarga</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="stat-card">
+              <i class="bi bi-gender-female stat-icon" aria-hidden="true"></i>
+              <div class="value">1,256</div>
+              <div class="label">Perempuan</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="stat-card">
+              <i class="bi bi-people-fill stat-icon" aria-hidden="true"></i>
+              <div class="value">45</div>
+              <div class="label">Penduduk Sementara</div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="stat-card">
+              <i class="bi bi-arrow-repeat stat-icon" aria-hidden="true"></i>
+              <div class="value">12</div>
+              <div class="label">Mutasi Penduduk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APB DESA -->
+    <section class="budget py-5 py-lg-6">
+      <div class="container">
+        <div class="text-center mb-4 mb-lg-5">
+          <h2 class="budget-title">APB Desa</h2>
+          <p class="budget-subtitle">
+            Akses cepat dan transparan terhadap APB Desa serta proyek
+            pembangunan
+          </p>
+        </div>
+
+        <div class="budget-slab shadow-sm">
+          <div class="row g-3 g-md-4 align-items-stretch">
+            <!-- Pendapatan -->
+            <div class="col-12 col-md-4">
+              <div class="budget-card budget-income">
+                <small class="budget-label">Pendapatan</small>
+                <div class="budget-value">Rp 2.450.000.000</div>
+              </div>
+            </div>
+            <!-- Belanja -->
+            <div class="col-12 col-md-4">
+              <div class="budget-card budget-expense">
+                <small class="budget-label">Belanja</small>
+                <div class="budget-value">Rp 2.350.000.000</div>
+              </div>
+            </div>
+            <!-- Surplus / Defisit -->
+            <div class="col-12 col-md-4">
+              <div class="budget-card budget-balance">
+                <small class="budget-label">Surplus/Defisit</small>
+                <div class="budget-value">Rp 200.000.000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <a href="#" class="btn btn-cta budget-cta">
+              Lihat Detail
+              <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BERITA DESA -->
+    <section class="news my-5 py-5 py-lg-6">
+      <div class="container">
+        <div
+          class="d-flex align-items-start align-items-md-center justify-content-between gap-3 mb-3 mb-lg-4"
+        >
+          <div>
+            <h2 class="news-title">Berita Desa</h2>
+            <p class="news-subtitle mb-0">
+              Menyajikan informasi terbaru tentang peristiwa dan berita dari
+              Desa Bintalahe
+            </p>
+          </div>
+          <a href="#" class="btn btn-ghost-brand d-none d-md-inline-flex">
+            Lihat Semua
+            <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="row g-3 g-md-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a class="news-card" href="#">
+              <div class="news-media">
+                <img
+                  src="assets/img/news1.jpg"
+                  alt="Pembangunan jalan desa tahap II"
+                />
+                <span class="date-badge b-green">15 November</span>
+              </div>
+              <div class="news-body">
+                <h3 class="news-card-title">
+                  Pembangunan Jalan Desa Bintalahe Tahap II Dimulai
+                </h3>
+                <p class="news-excerpt">
+                  Pemerintah Desa Bintalahe resmi memulai pembangunan jalan desa
+                  tahap II yang menghubungkan...
+                </p>
+                <div class="news-meta">
+                  <span>Administrator</span>
+                  <span class="dot"></span>
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>245
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a class="news-card" href="#">
+              <div class="news-media">
+                <img src="assets/img/news2.jpg" alt="Festival budaya desa" />
+                <span class="date-badge b-blue">10 November</span>
+              </div>
+              <div class="news-body">
+                <h3 class="news-card-title">
+                  Festival Budaya Desa Bintalahe 2025 Sukses Digelar
+                </h3>
+                <p class="news-excerpt">
+                  Festival budaya tahunan Desa Bintalahe tahun 2025 sukses
+                  digelar dengan menampilkan...
+                </p>
+                <div class="news-meta">
+                  <span>Administrator</span>
+                  <span class="dot"></span>
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>512
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a class="news-card" href="#">
+              <div class="news-media">
+                <img src="assets/img/news3.jpg" alt="Program posyandu balita" />
+                <span class="date-badge b-teal">8 November</span>
+              </div>
+              <div class="news-body">
+                <h3 class="news-card-title">
+                  Program Posyandu Balita Rutin Bulan Februari
+                </h3>
+                <p class="news-excerpt">
+                  Posyandu balita Desa Bintalahe menggelar pelayanan kesehatan
+                  rutin untuk balita dan ibu hamil...
+                </p>
+                <div class="news-meta">
+                  <span>Administrator</span>
+                  <span class="dot"></span>
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>178
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a class="news-card" href="#">
+              <div class="news-media">
+                <img
+                  src="assets/img/news4.jpg"
+                  alt="Pelatihan digital marketing"
+                />
+                <span class="date-badge b-blue">5 November</span>
+              </div>
+              <div class="news-body">
+                <h3 class="news-card-title">
+                  Pelatihan Digital Marketing untuk UMKM Desa
+                </h3>
+                <p class="news-excerpt">
+                  Pelaku UMKM di Desa Bintalahe mendapatkan pelatihan digital
+                  marketing untuk meningkatkan...
+                </p>
+                <div class="news-meta">
+                  <span>Administrator</span>
+                  <span class="dot"></span>
+                  <i class="bi bi-eye me-1" aria-hidden="true"></i>302
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- tombol mobile -->
+        <div class="text-center mt-3 d-md-none">
+          <a href="#" class="btn btn-ghost-brand w-auto">Lihat Semua</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- POTENSI DESA -->
+    <section class="potency py-5 py-lg-6">
+      <div class="container">
+        <div
+          class="d-flex align-items-start align-items-md-center justify-content-between gap-3 mb-3 mb-lg-4"
+        >
+          <div>
+            <h2 class="pot-title">Potensi Desa</h2>
+            <p class="pot-subtitle mb-0">
+              Potensi dan kemajuan Desa di berbagai bidang
+            </p>
+          </div>
+          <a href="#" class="btn btn-ghost-brand d-none d-md-inline-flex">
+            Lihat Semua
+            <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="row g-3 g-md-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <a class="pot-card" href="#">
+              <div class="pot-media">
+                <img src="assets/img/pot1.jpg" alt="Pertanian Padi Organik" />
+                <div class="shade"></div>
+                <div class="pot-media-text">
+                  <span class="pill-cat c-green">Pertanian</span>
+                  <h3 class="pot-heading">Pertanian Jagung Organik</h3>
+                </div>
+              </div>
+              <div class="pot-body">
+                Desa Bintalahe memiliki lahan pertanian jagung organik seluas
+                150 hektar yang menghasilkan jagung berkualitas tinggi.
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <a class="pot-card" href="#">
+              <div class="pot-media">
+                <img src="assets/img/pot2.jpg" alt="Kerajinan Anyaman Bambu" />
+                <div class="shade"></div>
+                <div class="pot-media-text">
+                  <span class="pill-cat c-teal">Industri Kreatif</span>
+                  <h3 class="pot-heading">Kerajinan Anyaman Bambu</h3>
+                </div>
+              </div>
+              <div class="pot-body">
+                Masyarakat desa memiliki keterampilan membuat kerajinan anyaman
+                bambu yang dikenal hingga ke luar daerah.
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <a class="pot-card" href="#">
+              <div class="pot-media">
+                <img src="assets/img/pot3.jpeg" alt="Peternakan Sapi Perah" />
+                <div class="shade"></div>
+                <div class="pot-media-text">
+                  <span class="pill-cat c-brand">Peternakan</span>
+                  <h3 class="pot-heading">Peternakan Sapi Perah</h3>
+                </div>
+              </div>
+              <div class="pot-body">
+                Kelompok peternak sapi perah menghasilkan susu segar berkualitas
+                yang dipasarkan di wilayah sekitar.
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- tombol mobile -->
+        <div class="text-center mt-3 d-md-none">
+          <a href="#" class="btn btn-ghost-brand w-auto">Lihat Semua</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WISATA -->
+    <section class="tour my-5 py-5 py-lg-6">
+      <div class="container">
+        <div
+          class="d-flex align-items-start align-items-md-center justify-content-between gap-3 mb-3 mb-lg-4"
+        >
+          <div class="text-center text-md-start w-100">
+            <h2 class="tour-title text-white mb-1">Wisata Desa</h2>
+            <p class="tour-subtitle mb-0 text-white-50">
+              Layanan yang mempermudah promosi wisata Desa sehingga dapat
+              menarik pengunjung Desa
+            </p>
+          </div>
+          <a
+            href="#"
+            class="btn btn-ghost-brand bg-white/0 text-white border-white d-none d-md-inline-flex"
+          >
+            Lihat Semua
+            <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="row g-3 g-md-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <a class="tour-card" href="#">
+              <div class="tour-media">
+                <img src="assets/img/wisata1.webp" alt="Pantai Karang Indah" />
+                <div class="tour-overlay"></div>
+                <div class="tour-media-text">
+                  <h3 class="tour-heading">Pantai Karang tajam</h3>
+                  <div class="tour-loc">
+                    <i class="bi bi-geo-alt me-1"></i> Wilayah selatan Desa
+                    Bintalahe
+                  </div>
+                </div>
+              </div>
+              <div class="tour-body">
+                Pantai dengan pemandangan karang yang indah, cocok untuk
+                snorkeling dan menikmati sunset.
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <a class="tour-card" href="#">
+              <div class="tour-media">
+                <img src="assets/img/wisata2.jpg" alt="Air Terjun Biru" />
+                <div class="tour-overlay"></div>
+                <div class="tour-media-text">
+                  <h3 class="tour-heading">Air Terjun Biru</h3>
+                  <div class="tour-loc">
+                    <i class="bi bi-geo-alt me-1"></i> Hutan Lindung Bintalahe
+                  </div>
+                </div>
+              </div>
+              <div class="tour-body">
+                Air terjun dengan kolam alami yang jernih, dikelilingi hutan
+                tropis yang asri.
+              </div>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <a class="tour-card" href="#">
+              <div class="tour-media">
+                <img src="assets/img/wisata3.webp" alt="Bukit Panorama" />
+                <div class="tour-overlay"></div>
+                <div class="tour-media-text">
+                  <h3 class="tour-heading">Bukit Limpuhi</h3>
+                  <div class="tour-loc">
+                    <i class="bi bi-geo-alt me-1"></i> Perbukitan Bintalahe
+                  </div>
+                </div>
+              </div>
+              <div class="tour-body">
+                Bukit dengan pemandangan 360 derajat, spot terbaik untuk melihat
+                sunrise dan sunset.
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- tombol mobile -->
+        <div class="text-center mt-3 d-md-none">
+          <a href="#" class="btn btn-ghost-brand text-white border-white"
+            >Lihat Semua</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- UMKM / BELI DARI DESA -->
+    <section class="market py-5 py-lg-6">
+      <div class="container">
+        <div
+          class="d-flex align-items-start align-items-md-center justify-content-between gap-3 mb-3 mb-lg-4"
+        >
+          <div>
+            <h2 class="market-title">Beli dari Desa</h2>
+            <p class="market-subtitle mb-0">
+              Produk UMKM Desa yang meningkatkan perekonomian masyarakat
+            </p>
+          </div>
+          <a href="#" class="btn btn-ghost-brand d-none d-md-inline-flex">
+            Lihat Semua
+            <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="row g-3 g-md-4">
+          <!-- Item 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a class="shop-card" href="#">
+              <div class="shop-media">
+                <img src="assets/img/umkm1.jpg" alt="Beras Organik Premium" />
+                <span class="shop-pill">Terlaris</span>
+              </div>
+              <div class="shop-body">
+                <h3 class="shop-name">Beras Organik Premium</h3>
+                <div class="shop-price">Rp 15.000/kg</div>
+                <div class="shop-seller">Kelompok Tani Makmur</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a class="shop-card" href="#">
+              <div class="shop-media">
+                <img src="assets/img/umkm2.jpg" alt="Kerajinan Tas Anyaman" />
+                <span class="shop-pill teal">Handmade</span>
+              </div>
+              <div class="shop-body">
+                <h3 class="shop-name">Kerajinan Tas Anyaman</h3>
+                <div class="shop-price">Rp 32.000</div>
+                <div class="shop-seller">UMKM Kreatif Bintalahe</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a class="shop-card" href="#">
+              <div class="shop-media">
+                <img src="assets/img/umkm3.jpg" alt="ilabulo" />
+                <span class="shop-pill orange">Segar</span>
+              </div>
+              <div class="shop-body">
+                <h3 class="shop-name">Ilabulo Gorontalo</h3>
+                <div class="shop-price">Rp 10.000</div>
+                <div class="shop-seller">UMKM Citarasa Sejahtera</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <a class="shop-card" href="#">
+              <div class="shop-media">
+                <img src="assets/img/umkm4.jpeg" alt="Madu Hutan Asli" />
+                <span class="shop-pill brand">Best Seller</span>
+              </div>
+              <div class="shop-body">
+                <h3 class="shop-name">Madu Hutan Asli</h3>
+                <div class="shop-price">Rp 45.000/botol</div>
+                <div class="shop-seller">Petani Lebah Bintalahe</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- tombol mobile -->
+        <div class="text-center mt-3 d-md-none">
+          <a href="#" class="btn btn-ghost-brand w-auto">Lihat Semua</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERI DESA -->
+     <div id="galeri"></div>
+    <section class="gallery py-5 py-lg-6">
+      <div class="container">
+        <div class="text-center mb-3 mb-lg-4">
+          <h2 class="gallery-title">Galeri Desa</h2>
+          <p class="gallery-subtitle mb-0">
+            Menampilkan kegiatan-kegiatan yang berlangsung di Desa
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- item 1 -->
+          <figure class="g-card">
+            <img src="assets/img/galeri1.jpeg" alt="MUSRENDBANGDES" />
+            <figcaption>
+              <span class="g-caption">MUSRENDBANGDES</span>
+            </figcaption>
+          </figure>
+
+          <!-- item 2 -->
+          <figure class="g-card">
+            <img src="assets/img/galeri2.jpeg" alt="Kerja bakti" />
+            <figcaption>
+              <span class="g-caption">Kerja bakti</span>
+            </figcaption>
+          </figure>
+
+          <!-- item 3 -->
+          <figure class="g-card">
+            <img src="assets/img/galeri3.jpeg" alt="musyawarah desa" />
+            <figcaption>
+              <span class="g-caption">Penyusunan RKP-Des</span>
+            </figcaption>
+          </figure>
+
+          <!-- item 4 -->
+          <figure class="g-card">
+            <img src="assets/img/galeri4.jpeg" alt="peringatan maulid nabi" />
+            <figcaption>
+              <span class="g-caption">Peringatan maulid nabi</span>
+            </figcaption>
+          </figure>
+
+          <!-- item 5 -->
+          <figure class="g-card">
+            <img src="assets/img/galeri5.jpeg" alt="Pelayanan Posyandu" />
+            <figcaption>
+              <span class="g-caption">Pelayanan Posyandu</span>
+            </figcaption>
+          </figure>
+
+          <!-- item 6 -->
+          <figure class="g-card">
+            <img src="assets/img/galeri6.jpeg" alt="Doa malam nifsu sya'ban" />
+            <figcaption>
+              <span class="g-caption">Doa malam nifsu sya'ban</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="text-center mt-3">
+          <a href="#" class="btn btn-cta px-4"
+            >Lihat Foto Lebih Banyak <i class="bi bi-arrow-right ms-2"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer mt-3">
+      <div class="container">
+        <!-- ===== Desktop / Tablet (grid) ===== -->
+        <div class="ft-desktop d-none d-md-block">
+          <div class="row gy-4 align-items-start">
+            <!-- Brand + alamat -->
+            <div class="col-md-4">
+              <div class="d-flex align-items-start gap-3">
+                <img
+                  src="assets/img/bonbol.png"
+                  alt="Logo Desa"
+                  class="ft-logo rounded-2"
+                />
+                <div>
+                  <h5 class="mb-1 text-white fw-bold">Desa Bintalahe</h5>
+                  <div>
+                    Kecamatan Kabila Bone<br />
+                    Kabupaten Bone Bolango<br />
+                    Provinsi Gorontalo
+                  </div>
+                </div>
+              </div>
+              <div class="my-3">
+                <small style="font-size: small">Ikuti Kami</small>
+                <ul class="ft-social list-unstyled d-flex gap-3 mt-3 mb-0">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/people/Pemdes-Bintalahe/61555877630568/"
+                      target="_blank"
+                      aria-label="Facebook"
+                      ><i class="bi bi-facebook"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Instagram"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="YouTube"
+                      ><i class="bi bi-youtube"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Twitter"
+                      ><i class="bi bi-twitter-x"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="Tiktok"
+                      ><i class="bi bi-tiktok"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Kontak -->
+            <div class="col-md-4">
+              <h6 class="ft-title">Hubungi Kami</h6>
+              <ul class="ft-list">
+                <li><i class="bi bi-telephone me-2"></i> 081234567890</li>
+                <li>
+                  <i class="bi bi-envelope me-2"></i>
+                  desabintalahe@gmail.com
+                </li>
+                <li>
+                  <i class="bi bi-clock me-2"></i> Senin – Jumat: 08.00 – 16.00
+                  WIB
+                </li>
+                <li>
+                  <i class="bi bi-geo-alt me-2"></i> Kompleks Lapangan Desa
+                  Bintalahe, Kabila Bone
+                </li>
+              </ul>
+            </div>
+
+            <!-- Jelajahi -->
+            <div class="col-md-2">
+              <h6 class="ft-title">Jelajahi</h6>
+              <ul class="ft-links">
+                <li>
+                  <a href="https://bonebolangokab.go.id/"
+                    ><i class="bi bi-box-arrow-up-right"></i> Bone Bolango</a
+                  >
+                </li>
+                <li>
+                  <a href="https://berita.bonebolangokab.go.id/"
+                    ><i class="bi bi-box-arrow-up-right"></i> Berita BonBol</a
+                  >
+                </li>
+                <li>
+                  <a href="https://kemendesa.go.id/"
+                    ><i class="bi bi-box-arrow-up-right"></i> Kemendesa</a
+                  >
+                </li>
+                <li>
+                  <a href="https://cekdptonline.kpu.go.id/"
+                    ><i class="bi bi-box-arrow-up-right"></i> Cek DPT Online</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Kunjungan -->
+            <div class="col-md-2">
+              <h6 class="ft-title">Kunjungan Website</h6>
+              <ul class="ft-stats">
+                <li>
+                  <span>Hari Ini</span><strong class="text-success">127</strong>
+                </li>
+                <li>
+                  <span>Kemarin</span><strong class="text-success">98</strong>
+                </li>
+                <li>
+                  <span>Minggu Ini</span
+                  ><strong class="text-success">456</strong>
+                </li>
+                <li>
+                  <span>Bulan Ini</span
+                  ><strong class="text-success">1823</strong>
+                </li>
+                <li class="ft-total">
+                  <span>Total</span><strong class="text-success">12.458</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="ft-sep" />
+          <div
+            class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-2 small"
+          >
+            <div>© <span id="y"></span></div>
+
+            <div>
+              Powered by
+              <a class="ft-link" href="#" target="_blank" rel="noopener"
+                >Wumbu Digital</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- ===== Mobile (accordion / dropdown) ===== -->
+        <div class="ft-mobile d-md-none">
+          <div class="d-flex align-items-start gap-3 mb-3">
+            <img
+              src="assets/img/bonbol.png"
+              alt="Logo Desa"
+              class="ft-logo rounded-2"
+            />
+            <div>
+              <h5 class="mb-1 text-white fw-bold">Desa Bintalahe</h5>
+              <div class="small">
+                Kec. Kabila Bone, Kab. Bone Bolango, Prov. Gorontalo
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="ftAcc">
+            <!-- Kontak -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="h-kontak">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#c-kontak"
+                  aria-expanded="false"
+                  aria-controls="c-kontak"
+                >
+                  <i class="bi bi-telephone me-2"></i> Hubungi Kami
+                </button>
+              </h2>
+              <div
+                id="c-kontak"
+                class="accordion-collapse collapse"
+                data-bs-parent="#ftAcc"
+              >
+                <div class="accordion-body">
+                  <ul class="ft-list mb-0">
+                    <li><i class="bi bi-telephone me-2"></i> 081234567890</li>
+                    <li>
+                      <i class="bi bi-envelope me-2"></i>
+                      desabintalahe@digitadesa.id
+                    </li>
+                    <li>
+                      <i class="bi bi-clock me-2"></i> Senin – Jumat: 08.00 –
+                      16.00 WIB
+                    </li>
+                    <li>
+                      <i class="bi bi-geo-alt me-2"></i> Jl. Raya Bintalahe No.
+                      123
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sosial -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="h-sos">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#c-sos"
+                  aria-expanded="false"
+                  aria-controls="c-sos"
+                >
+                  <i class="bi bi-share me-2"></i> Media Sosial
+                </button>
+              </h2>
+              <div
+                id="c-sos"
+                class="accordion-collapse collapse"
+                data-bs-parent="#ftAcc"
+              >
+                <div class="accordion-body">
+                  <ul class="ft-social list-unstyled d-flex gap-3 mb-0">
+                    <li>
+                      <a
+                        href="https://www.facebook.com/people/Pemdes-Bintalahe/61555877630568/"
+                        target="_blank"
+                        aria-label="Facebook"
+                        ><i class="bi bi-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Instagram"
+                        ><i class="bi bi-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="YouTube"
+                        ><i class="bi bi-youtube"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Twitter"
+                        ><i class="bi bi-twitter-x"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="#" aria-label="Tiktok"
+                        ><i class="bi bi-tiktok"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jelajahi -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="h-jel">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#c-jel"
+                  aria-expanded="false"
+                  aria-controls="c-jel"
+                >
+                  <i class="bi bi-link-45deg me-2"></i> Jelajahi
+                </button>
+              </h2>
+              <div
+                id="c-jel"
+                class="accordion-collapse collapse"
+                data-bs-parent="#ftAcc"
+              >
+                <div class="accordion-body">
+                  <ul class="ft-links mb-0">
+                    <li>
+                      <a href="https://bonebolangokab.go.id/"
+                        >Wesite Bone Bolango</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://berita.bonebolangokab.go.id/"
+                        >Berita Bone Bolango</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://kemendesa.go.id/">Website Kemendesa</a>
+                    </li>
+                    <li>
+                      <a href="https://kemendagri.go.id/">Website Kemendagri</a>
+                    </li>
+                    <li>
+                      <a href="https://cekdptonline.kpu.go.id/"
+                        >Cek DPT Online</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Kunjungan -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="h-vis">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#c-vis"
+                  aria-expanded="false"
+                  aria-controls="c-vis"
+                >
+                  <i class="bi bi-globe2 me-2"></i> Kunjungan Website
+                </button>
+              </h2>
+              <div
+                id="c-vis"
+                class="accordion-collapse collapse"
+                data-bs-parent="#ftAcc"
+              >
+                <div class="accordion-body">
+                  <ul class="ft-stats mb-0">
+                    <li>
+                      <span>Hari Ini</span
+                      ><strong class="text-success">127</strong>
+                    </li>
+                    <li>
+                      <span>Kemarin</span
+                      ><strong class="text-success">98</strong>
+                    </li>
+                    <li>
+                      <span>Minggu Ini</span
+                      ><strong class="text-success">456</strong>
+                    </li>
+                    <li>
+                      <span>Bulan Ini</span
+                      ><strong class="text-success">1823</strong>
+                    </li>
+                    <li class="ft-total">
+                      <span>Total</span
+                      ><strong class="text-success">12.458</strong>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr class="ft-sep" />
+          <div class="small text-center">
+            © <span id="y"></span>2025 Powered by
+            <a class="ft-link" href="#" target="_blank" rel="noopener"
+              >Wumbu Digital</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Tombol Scroll to Top -->
+    <a href="#" class="scroll-top" title="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!--  -->
+    <!-- <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      document.onkeydown = function(e) {
+        if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.key === 's' || e.key === 'S' || e.key === 'c' || e.key === 'C')) {
+          return false;
+        }
+      };
+    </script> -->
+  </body>
+</html>
